@@ -1,16 +1,13 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-images:
-  - name: nginx
-    newTag: alpine
-
 namespace: dev
 namePrefix: dev-
 
 resources:
-- ../../base
-- dev-deployment.yaml
+  - ../../base
+  - dev-deployment.yaml
 
-patches:
-- path: dev-deployment.yaml
+images:
+  - name: nginx
+    newTag: alpine
