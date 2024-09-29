@@ -10,4 +10,7 @@ commonLabels:
 
 images:
   - name: nginx
-    newTag: alpine 
+    newTag: alpine
+
+patchesStrategicMerge:
+  - patch-dev.yaml
