@@ -1,10 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-nginx
+  name: dev-my-app 
 spec:
   template:
     spec:
       containers:
-      - name:  my-nginx
-        image: nginx:alpine
+      - name: nginx # Container ismi
+        resources:
+          requests:
+            memory: "128Mi"  # Dev için bellek isteği
+            cpu: "100m"      # Dev için CPU isteği
+          limits:
+            memory: "256Mi"  # Dev için bellek limiti
+            cpu: "250m"      # Dev için CPU limiti
