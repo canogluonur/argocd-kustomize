@@ -8,5 +8,4 @@ patches:
   - path: patch.yaml
     target:
       kind: Deployment
-      name: my-app
-
+      name: my-nginx
