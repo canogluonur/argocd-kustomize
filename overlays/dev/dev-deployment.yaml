@@ -1,17 +1,11 @@
 apiVersion: apps/v1
 kind: Deployment
+metadata:
+  name: my-nginx  # Base'deki Deployment ismi
 spec:
-  replicas: 3
+  replicas: 3  # Değişiklik yapılacak alan
+  template:
     spec:
       containers:
       - name: nginx
-        image: nginx:alpine
-        ports:
-        - containerPort: 80
-        resources:
-          requests:
-            memory: "256Mi"
-            cpu: "250m"
-          limits:
-            memory: "512Mi"
-            cpu: "500m"
+        image: nginx:alpine  # Değişiklik yapılacak alan
