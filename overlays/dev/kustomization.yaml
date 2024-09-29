@@ -7,8 +7,6 @@ resources:
   - ../../base/service.yaml
 
 namePrefix: dev-
-labels:
-  environment: dev 
 
 images:
   - name: nginx
