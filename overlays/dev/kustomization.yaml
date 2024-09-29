@@ -8,6 +8,6 @@ resources:
   - ../../base
   - dev-deployment.yaml
 
-images:
-  - name: nginx
-    newTag: latest
+#images:
+  #- name: nginx
+    #newTag: latest
