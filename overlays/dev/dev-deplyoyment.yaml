@@ -1,27 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-nginx
-  namespace: dev 
+  name: my-nginx-dev
 spec:
-  replicas: 3
-  selector:
-    matchLabels:
-      app: my-nginx
-  template:
-    metadata:
-      labels:
-        app: my-nginx
+  replicas: 2
     spec:
       containers:
       - name: nginx
-        image: nginx:apine
+        image: nginx:alpine
         ports:
         - containerPort: 80
         resources:
           requests:
-            memory: "128Mi"  
-            cpu: "100m"      
+            memory: "256Mi"
+            cpu: "250m"
           limits:
-            memory: "256Mi" 
-            cpu: "250m"      #     
+            memory: "512Mi"
+            cpu: "500m"
