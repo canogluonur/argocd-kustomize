@@ -1,8 +1,12 @@
-namespace: dev
 
+namespace: dev
 
 resources:
   - ../../base
-patchesStrategicMerge:
-  - patch.yaml
+
+patches:
+  - path: patch.yaml
+    target:
+      kind: Deployment
+      name: my-app
 
