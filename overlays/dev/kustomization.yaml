@@ -5,9 +5,10 @@ namespace: dev
 resources: 
   - ../../base/deployment.yaml
   - ../../base/service.yaml
+
 namePrefix: dev-
-commonLabels:
-  environment: dev
+labels:
+  environment: dev 
 
 images:
   - name: nginx
@@ -17,4 +18,4 @@ patches:
   - path: patch.yaml
     target:
       kind: Deployment
-      name: my-app
+      name: my-app 
