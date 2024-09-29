@@ -10,4 +10,4 @@ resources:
 
 images:
   - name: nginx
-    newTag: alpine
+    newTag: latest
