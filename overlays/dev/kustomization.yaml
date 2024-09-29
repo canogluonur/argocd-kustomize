@@ -3,9 +3,3 @@ namespace: dev
 
 resources:
   - ../../base
-  - service.yaml 
-patches:
-  - path: patch.yaml
-    target:
-      kind: Deployment
-      name: my-nginx
