@@ -1,10 +1,10 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-app
+  name: my-nginx
 spec:
   template:
     spec:
       containers:
-      - name: my-app
+      - name:  my-nginx
         image: nginx:alpine
