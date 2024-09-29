@@ -7,7 +7,3 @@ namePrefix: dev-
 resources:
   - ../../base/service.yaml
   - dev-deployment.yaml
-
-#images:
-  #- name: nginx
-    #newTag: latest
