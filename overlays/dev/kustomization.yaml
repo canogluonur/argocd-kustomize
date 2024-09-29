@@ -3,7 +3,7 @@ namespace: dev
 
 resources:
   - ../../base
-
+  - service.yaml 
 patches:
   - path: patch.yaml
     target:
